@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTRODUCCION A LOS FORMULARIOS
+
+    </title>
+</head>
+<body>
+    
+    <header>
+        <h1>FORMULARIO PARA INGRESAR DATOS DE UNA PERSONA</h1>
+    </header>
+    <main>
+
+        <!-- FORMULARIO -->
+
+        <form action="server.html" method="get">
+            <!-- TEXT --> 
+            <label for="apellido">Ingrese su apellido:</label>
+            <input type="text" 
+            name="apellido" 
+            id="apellido" 
+            placeholder="Ej Landazuri"
+            minlength="2"
+            maxlength="5">
+
+            <br>
+            <label for="nombre">Ingrese su nombre:</label>
+            <input type="text" 
+            name="nombre" 
+            id="nombre" 
+            placeholder="Ej Stalyn"
+            minlength="2"
+            maxlength="5">
+
+            <br>
+            <!-- NUMBER -->
+            <label for="edad">Ingrese su edad</label>
+            <input 
+            type="number" 
+            name="edad" 
+            id="edad" 
+            min="5" 
+            max="75" 
+            placeholder="20">
+
+            <br>
+            <!-- EMAIL -->
+             <label for="email">Ingrese su email</label>
+             <input 
+             type="email" 
+             name="email" 
+             id="email" 
+             placeholder="sjlandazuri@espe.edu.ec">
+
+             <br>
+             <!-- DATE -->
+              <label for="fecha">INGRESE SU FECHA DE NACIMIENTO</label>
+              <input 
+              type="date" 
+              name="fecha_nacimiento" 
+              id="fecha"
+              value="2025-11-24"
+              max="2025-11-24"
+              min="2025-09-18"
+              >
+
+            <br>
+              <label for="">Seleccione su sexo:</label>
+              <label for="hombre">hombre</label>
+              <input type="radio" name="sexo" id="hombre" value="hombre">
+              <label for="mujer">mujer</label>
+              <input type="radio" name="sexo" id="mujer" value="mujer">
+              <label for="desconocido">desconocido</label>
+              <input type="radio" name="sexo" id="desconocido" value="desconocido" disabled>
+                <br>
+            
+                <!-- CHECKBOX -->
+            <br>
+              <label for="">Seleccione sus dias de clase de pro web:</label>
+              <label for="lunes">lunes</label>
+              <input type="checkbox" name="dias[]" id="lunes" value="lunes">
+              <label for="martes">martes</label>
+              <input type="checkbox" name="dias[]" id="martes" value="martes">
+              <label for="miercoles">miercoles</label>
+              <input type="checkbox" name="dias[]" id="miercoles" value="miercoles">
+              <label for="jueves">jueves</label>
+              <input type="checkbox" name="dias[]" id="jueves" value="jueves">
+              <label for="viernes">viernes</label>
+              <input type="checkbox" name="dias[]" id="viernes" value="viernes">
+
+                <br>
+
+                <!-- INPUT -->
+                 <label for="foto">Suba su foto</label>
+                    <input type="file" 
+                    name="foto" 
+                    id="foto"
+                    accept="application/pdf"
+                    >
+
+                    <!-- color -->
+                <br>
+                <label for="color">Seleccione un color</label>
+                <input type="color" 
+                name="color" 
+                id="color"
+                value="#ff0000"
+                >
+             <!-- label[for="u"]{vu}+input[type="text" name="u" id="u" placehlder="u"] -->
+
+             <br>
+
+             <!-- RANGE -->
+                <label for="estatura">Seleccione su estatura</label>
+                <input type="range" name="estatura" id="estatura" min="10" max="250" value="100">
+
+                <br>
+
+                <!-- SEARCH -->
+                
+                <search>Buscar cedula</search>
+                <input type="search" name="cedula" id="cedula">
+                <br>
+
+                <!-- RESET -->
+                 <label for="vacia">vaciar formulario</label>
+                 <input type="reset" value="vacia" id="vacia">   
+
+                <br>
+                <!-- HIDDEN, PASSWORD -->
+
+                <label for="password">Ingrese contraseña</label>
+                <input type="password" name="password" id="password" placeholder="********">
+                <!-- SUBMIT -->
+                
+                <input type="submit" name="enviar" id="enviar" value="ENVIAR FORMULARIO" >
+                 
+        </form>
+
+        
+
+    </main>
+    <footer>
+
+    </footer>
+
+</body>
+</html>
