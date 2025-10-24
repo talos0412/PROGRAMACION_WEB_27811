@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PRACTICA DE WEB :P</title>
+</head>
+<body>
+
+    <header>Voy a practicar fokin web</header>
+    
+    <!-- <ol>
+        <li>
+            Documentos
+            
+            <ol>
+                <li value="3">
+                    Pasaporte
+                </li>
+                <li value="2">
+                    Seguro medico
+                </li>
+                <li value="1">
+                    Tickets digitales
+                </li>
+            </ol>
+            <ol reversed>
+                <li>
+                    Pasaporte
+                </li>
+                <li>
+                    Seguro medico
+                </li>
+                <li>
+                    Tickets digitales
+                </li>
+            </ol>
+        <li>
+            Equipaje
+
+            <ul type="square">
+                <li>
+                    Ropa
+                    <ul type="disc">
+                        <li>
+                        Basica 
+                        </li>
+                        <li>
+                            Formal
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    Electronicos
+                    <ul type="circle">
+                        <li>
+                            Telefono
+                        </li>
+                        <li>
+                            Adaptador
+                        </li>
+                        <li>
+                            Power Bank
+                            <ol type="1">
+                                <li>
+                                    Pequenio
+                                </li>
+                                <li>
+                                    Grande
+                                </li>
+                            </ol>
+                        </li>
+
+                    </ul>
+                </li>
+            </ul>
+        </li>
+    </ol> -->
+
+
+    <!-- <table border="5", width="50%">
+        <thead>
+            <th>
+                Material
+            </th>
+            <th>
+                Dureza
+            </th>
+            <th>
+                Reaccion
+            </th>
+            <th>
+                Observaciones
+            </th>
+        </thead>
+        
+        <tbody>
+            <tr>
+                <td>
+                    Marmol
+                </td>
+                <td>
+                    Alta
+                </td>
+                <td>
+                    Reaccion leve
+                </td>
+                <td colspan="2">
+                    muestra
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                    Vidrio
+                </td>
+                <td>
+                    Media
+                </td>
+                <td>
+                    Sin reaccion
+                </td>
+                <td style="text-align: center;">
+                    ----
+                </td>
+
+            </tr>
+
+            <tr>
+                <td>
+                    Metal X
+                </td>
+                <td>
+                    Variable
+                </td>
+                <td>
+                    Parcial
+                </td>
+                <td rowspan="2">
+                    Resultado incierto
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Metal y
+                </td>
+                <td>
+                    Variable
+                </td>
+                <td>
+                    Nula
+                </td>
+                
+            </tr>
+
+            
+        </tbody>
+    </table> -->
+
+    <h1>
+        Datos personales
+    </h1>
+
+    <form action="server.html" method="get">
+        <label for="nombreCompleto">Ingrese su nombre completo</label>
+        <br>
+        <input type="text" 
+        name="nombreCompleto" 
+        id="nombreCompleto" 
+        placeholder="Stalyn Joseph Landazuri Rodriguez"
+        minlength="3"
+        maxlength="40"
+        size="27">
+
+        <br>
+        <br>
+
+        <label for="edad">Ingrese su edad</label>
+        <br>
+        <input type="number" 
+        name="edad" 
+        id="edad" 
+        placeholder="20"
+        min="18"
+        max="60"
+        size="10">
+        <br>
+        <br>
+        <label for="email">Ingrese su email</label>
+        <br>
+        <input type="email" 
+        name="email" 
+        id="email" 
+        placeholder="stalynpepe1105@hotmail.com"
+        size="24"
+        required>
+        <br>
+        <br>
+        <label for="email">Ingrese su email</label>
+        <br>
+        <input type="email" 
+        name="email" 
+        id="email" 
+        placeholder="stalynpepe1105@hotmail.com"
+        size="24">
+        <br>
+        <br>
+        <label for="">Seleccione su sexo</label>
+        <br>
+        <input type="radio" name="sexo" id="hombre" value="hombre">
+        <label for="hombre">hombre</label>
+        <br>
+        <input type="radio" name="sexo" id="mujer" value="hombre">
+        <label for="mujer">mujer</label>
+        <br>
+        <input type="radio" name="sexo" id="otro" value="otro">
+        <label for="otro">otro</label>
+        <br><br>
+        <h1>Detalles del viaje</h1>
+        
+        <label for="universidad">universidad</label>
+        <br>
+        <select name="universidad" id="universidad">
+            <option value="" disabled selected>Seleccione una universidad</option>
+            <optgroup label="Ecuador">
+                <option value="espe">ESPE</option>
+                <option value="uce">UCE</option>
+                <option value="utpl">UTPL</option>
+            </optgroup>
+            <optgroup label="Colombia">
+                <option value="nose">nose</option>
+                <option value="nidea">nidea</option>
+            </optgroup>
+        </select>
+        <br><br>
+
+        <label for="fecha">Fecha de salida</label>
+        <input type="date" name="fecha" id="fecha" value="fecha">
+        <br><br>
+        <h1>Preferencias</h1>
+
+        <label for="">Seleccione actividades a realizar</label>
+        <br>
+        <input type="checkbox" name="actividades[]" id="visita" value="visita">
+        <label for="visita">Visita guiada</label>
+        <br>
+        <input type="checkbox" name="actividades[]" id="taller" value="taller">
+        <label for="taller">Taller tecnico</label>
+        <br>
+        <input type="checkbox" name="actividades[]" id="excursion" value="excursion">
+        <label for="excursion">Excursion</label>
+        <br><br>
+        <label for="color">Seleccione el color para el grupo</label>
+        <br>
+        <input type="color" name="color" id="color" value="color">
+
+        <br><br>
+
+        <label for="emocion">Seleccione su nivel de emocion</label>
+        <br>
+        <input type="range" name="emocion" id="emocion" min="0" max="100" value="70">
+
+        <br><br>
+        <h1>Comentarios</h1>
+        <label for="motivacion">Escriba que lo motiva a ir</label>
+        <br>
+        <textarea name="motivacion" id="motivacion" rows="4" cols="40" 
+        minlength="10" placeholder="Porque deseas asistir?"></textarea>
+        <br><br>
+
+        <label for="archivo">Suba una copia de su carnet estudiantil (pdf)</label>
+        <br>
+        <input type="file" name="archivo" id="archivo" value="archivo" accept="pdf">
+        <br><br>
+        <label for="resetiar">Pulse para limpiar el formulario</label>
+        <br>
+        <input type="reset" id="resetiar" value="resetear">
+
+        <br>
+        <br>
+        <label for="enviar">Pulse para enviar el formulario</label>
+        <br>
+        <input type="submit" name="enviar" id="enviar" value="Enviar formulario">
+
+
+
+    </form>
+
+</body>
+
+<footer>
+
+</footer>
+</html>
