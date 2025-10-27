@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        SELECT
+    </title>
+</head>
+<body>
+    <header>
+|       <h1>Registro estudiantes en carrera</h1>
+    </header>
+    <main>
+
+    <fieldset style="text-align: center;">
+        <h1>
+        Datos personales
+        </h1>
+
+    <form action="server.html" method="get">
+        <label for="nombreCompleto">Ingrese su nombre completo</label>
+        <br>
+        <input type="text" 
+        name="nombreCompleto" 
+        id="nombreCompleto" 
+        placeholder="Stalyn Joseph Landazuri Rodriguez"
+        minlength="3"
+        maxlength="40"
+        size="27"
+        required>
+
+        <br>
+        <br>
+
+        <select name="cedula" id="cedula">
+            <option value="">Inicia con cero:</option>
+            <option value=""><input 
+  type="number" 
+  id="cedula"
+  name="cedula"
+  placeholder="1750088401"
+  min="0"
+  max="9999999999"
+  required></option>
+            <option value="1723456791">1723456791</option>
+            <option value="1723456792">1723456792</option>
+        </select>
+
+        <br>
+
+        
+    
+    
+
+        <br>
+        
+
+        
+        <label for="fecha_nacimiento">Fecha de nacimiento</label><br>
+        <input type="date" name="fecha" id="fecha" min="2004-10-28" max="2009-10-27">
+        <br><br>
+
+
+        <label for="g">Generar ID</label>
+        <br>
+        <input type="text" name="g" id="g" pattern="[A-Z]{3}+[1-9]{5}" required>
+        <br><br>
+        <label for="materias">Seleccionar materias</label>
+        <br>
+        <br>
+        <input type="checkbox" name="materias[]" id="materia" value="materia" required>
+        <label for="calculo">calculo</label>
+        <br>   
+        <input type="checkbox" name="materias[]" id="materia" value="materia" disabled>
+        <label for="algebra">algebra</label>
+        <br>
+        <input type="checkbox" name="materias[]" id="materia" value="materia" required>
+        <label for="fisica">fisica</label>
+        <br>
+        <input type="checkbox" name="materias[]" id="materia" value="materia" required>
+        <label for="quimica">quimica</label>
+        <br>
+    <input type="checkbox" name="materias[]" id="materia" value="materia" required>
+        <label for="quimica2">quimica2</label>
+        <br>
+        <input type="checkbox" name="materias[]" id="materia" value="materia" required>
+        <label for="quimica3">quimica3</label>
+        <br>
+
+        <br>
+
+        <br><br>
+
+        
+        <label for="hojaVida">Suba una copia de su hoja de vida (pdf)</label>
+        <br>
+        <input type="file" name="archivo" id="archivo" value="archivo" accept="pdf" >
+        <br>
+        <br>
+        <label for="enviar">Pulse para enviar el formulario</label>
+        <br>
+        <input type="submit" name="enviar" id="enviar" value="Enviar formulario">
+        
+
+
+    </form>
+    </fieldset>
+
+    </main>
+    <footer>
+
+    </footer>
+   
+    
+</body>
+</html>

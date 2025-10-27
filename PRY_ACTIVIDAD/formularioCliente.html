@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario Cliente</title>
+</head>
+<body>
+
+    <h1>Formulario Cliente</h1>
+
+    <table border="3" width="50%">
+        <thead>
+            <tr><th colspan="6">
+                Datos del Cliente
+            </th></tr></thead>
+        <tr>
+            <th>
+                <label for="nombre">Nombre:</label>
+            </th>
+            <th>
+                <input type="text" id="nombre" name="nombre">
+            </th>
+            <th>
+                <label for="apellido">Apellido:</label>
+            </th>
+            <th>
+                <input type="text" id="apellido" name="apellido">
+            </th>
+            <th>
+                <label for="cedula">Cedula:</label>
+            </th>
+            <th>
+                <input type="text" id="cedula" name="cedula" minlength="10" maxlength="10">  
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+            <label for="edad">Edad</label>
+            </th>
+            <td>
+                <input type="number" id="edad" name="edad" min="0" max="100">
+            </td>
+            <th>
+                <label for="email">Email:</label>
+            </th>
+            <td>
+                <input type="email" id="email" name="email">
+            </td>
+            <th>
+                <label for="fechaCompra">Fecha:</label>
+            </th>
+            <td>
+            <input type="date" id="fechaCompra" name="fechaCompra" value="2025-10-24">
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                <label for="">Sexo:</label>
+            </th>
+            <td colspan="3">
+                <input type="radio" name="sexo" id="hombre" value="hombre">
+                <label for="hombre">hombre</label>
+                <input type="radio" name="sexo" id="mujer" value="mujer">
+                <label for="mujer">mujer</label>
+                <input type="radio" name="sexo" id="desconocido" value="desconocido" disabled>
+                <label for="desconocido">desconocido</label>
+            </td>
+            <td>
+                <label for="telefono">Telefono:</label>
+            </td>
+            <td>
+                <input type="tel" id="telefono" name="telefono" minlength="10" maxlength="10">
+            </td>
+        </tr>
+
+        <tr>
+            <th colspan="2">Grupo de riesgo</th>
+            <td colspan="4">
+              
+              <input type="checkbox" name="descuento[]" id="adultoMayor" value="adultoMayor">
+              <label for="adultoMayor">Adulto Mayor</label>
+              
+              <input type="checkbox" name="descuento[]" id="discapacitado" value="discapacitado">
+              <label for="Discapacitado">Discapacitado</label>
+
+              <input type="checkbox" name="descuento[]" id="embarazada" value="embarazada">
+              <label for="embarazada">Embarazada</label>
+            </td>
+        </tr>
+
+        <tr>
+            <th colspan ="2">
+                <label for="satisfaccion">Nivel de satisfaccion</label>
+            </th>
+            <th colspan="4">
+                <input type="range" name="satisfaccion" id="satisfaccion" min="0" max="10" value="7">
+            </th>
+        </tr>
+
+        <tfoot>
+            <tr>
+                <th colspan="6">
+                    <input type="submit" value="Enviar">
+                    <input type="reset" value="Borrar">
+                </th>
+            </tr>
+        </tfoot>
+    </table>
+</body>
+
+<footer>
+    
+</footer>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        SELECT
+    </title>
+</head>
+<body>
+    <header>
+|       <h1>Select en formulario</h1>
+    </header>
+    <main>
+        <form action="server.html" method="get">
+            <!-- <input type="submit" value="Enviar al servidor"> -->
+
+            <!-- Select para form -->
+            
+            <fieldset style="text-align: center;">
+                <label for="lenguaje_programacion">SELECCIONE SU LENGUAJE DE PROGRAMACION FAVORITO</label>
+             <select name="lenguaje_programacion" id="lenguaje_programacion">
+                <option value="c_mas_mas">C++</option>
+                <option value="java">Java</option>
+                <option value="python">Python</option>
+                <option value="html" disabled>html</option>
+             </select>
+             <br>
+             <label for="musica_favorita">Seleccione su musica favorita</label>
+             <select name="musica_favorita[]" id="musica_favorita" multiple required size="2">
+                <optgroup  label="Regueton" title="Regueton">
+                    <option value="loba">Shakira Loba</option>
+                <option value="anoche" selected>Bad bunny Anoche</option>
+                <option value="all_of_me">John Lenon All of Me</option>
+                <option value="triste" >Triste Jose Jose</option>
+                </optgroup>
+                
+                <optgroup  label="Chicha" title="Chicha">
+                    <option value="loba">Shakira Loba</option>
+                <option value="anoche" selected>Bad bunny Anoche</option>
+                <option value="all_of_me">John Lenon All of Me</option>
+                <option value="triste" >Triste Jose Jose</option>
+                </optgroup>
+             </select></fieldset>
+            
+            <br>        
+            <!-- textare para form -->
+             <label for="frase_motivadora">Ingrese su frase del dia de hoy</label>
+             <br>
+            <textarea name="frase_motivadora" id="frase_motivadora" cols="30" rows="5" required disabled>Buenos días a todos
+            </textarea>
+
+
+
+            <!-- hidden -->
+             <input type="hidden" name="cedula_usuario" id="cedula_usuario" value="1723456789">
+             <button type="submit">ENVIAR AL SERVER</button>
+        
+             
+             
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+   
+    
+</body>
+</html>

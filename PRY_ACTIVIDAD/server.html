@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SERVER</title>
+</head>
+<body>
+    <h1>Encuesta de satisfacción</h1>
+
+<table border="3" width="50%" style="margin-top:30px;">
+  <thead>
+    <tr><th colspan="6">Encuesta de Satisfacción</th></tr>
+    
+  </thead>
+
+  <tr>
+    <th>Aspecto</th>
+    <th>1</th>
+    <th>2</th>
+    <th>3</th>
+    <th>4</th>
+    <th>5</th>
+  </tr>
+
+  <tr>
+    <th>Atención del personal</th>
+    <td><input type="radio" name="q_atencion" value="1" required></td>
+    <td><input type="radio" name="q_atencion" value="2"></td>
+    <td><input type="radio" name="q_atencion" value="3"></td>
+    <td><input type="radio" name="q_atencion" value="4"></td>
+    <td><input type="radio" name="q_atencion" value="5"></td>
+  </tr>
+
+  <tr>
+    <th>Calidad del producto</th>
+    <td><input type="radio" name="q_calidad" value="1" required></td>
+    <td><input type="radio" name="q_calidad" value="2"></td>
+    <td><input type="radio" name="q_calidad" value="3"></td>
+    <td><input type="radio" name="q_calidad" value="4"></td>
+    <td><input type="radio" name="q_calidad" value="5"></td>
+  </tr>
+
+  <tr>
+    <th>Precio / Valor</th>
+    <td><input type="radio" name="q_precio" value="1" required></td>
+    <td><input type="radio" name="q_precio" value="2"></td>
+    <td><input type="radio" name="q_precio" value="3"></td>
+    <td><input type="radio" name="q_precio" value="4"></td>
+    <td><input type="radio" name="q_precio" value="5"></td>
+  </tr>
+
+  <tr>
+    <th colspan="2"><label for="enc_satisfaccion">Satisfacción (0–10):</label></th>
+    <td colspan="4">
+      <input type="range" id="enc_satisfaccion" min="0" max="10" value="8"
+             oninput="this.nextElementSibling.value = this.value">
+      <output>8</output>
+    </td>
+  </tr>
+
+  <tr>
+    <th colspan="2">Información del cliente</th>
+    <td colspan="4">
+      <input type="checkbox" id="promos" value="promos">
+      <label for="promos">Deseo recibir promociones</label><br>
+      <input type="checkbox" id="autorizo" value="autorizo" checked>
+      <label for="autorizo">Autorizo uso de mis datos personales</label>
+    </td>
+  </tr>
+
+  <tr>
+    <td colspan="6" style="text-align:center;">
+      <input type="submit" value="Crear otro formulario">
+      <input type="reset" value="Borrar">
+    </td>
+  </tr>
+</table>
+
+</body>
+</html>
