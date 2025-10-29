@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>INTERNO</title>
+
+    <style>
+        input[type="text"]{
+            text-decoration: overline;
+        }
+        textarea{
+            background-color: lightgray;
+            margin-top:100px;
+        }
+        select{
+            margin-bottom: 100px;
+            background-color: rgb(102, 59, 59);
+        }
+        input[type="checkbox"]{
+            margin-left: 100px;
+        }
+        input[type="radio"]{
+            margin-right: 100px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <label for="nombre">Ingrese su nombre</label>
+    <input type="text" id="nombre" name="nombre" placeholder="Escriba su nombre"
+    >
+    <br>
+    <label for="descripcion">Breve descripcion de su persona</label>
+    <br>
+
+    <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Descripcion"></textarea>
+
+    <br>
+        <label for="">Seleccione su sexo</label>
+        <br>
+        <input type="radio" name="sexo" id="hombre" value="hombre">
+        <label for="hombre">hombre</label>
+        <br>
+        <input type="radio" name="sexo" id="mujer" value="hombre">
+        <label for="mujer">mujer</label>
+        <br>
+        <input type="radio" name="sexo" id="otro" value="otro">
+        <label for="otro">otro</label>
+        <br>
+
+    <label for="universidad">A que universidad pertenece</label>
+    <br>
+    <select name="universidad" id="universidad">
+            <option value="" disabled selected>Seleccione una universidad</option>
+                <option value="espe">ESPE</option>
+                <option value="uce">UCE</option>
+                <option value="utpl">UTPL</option>
+        </select>
+
+    <br>
+        <label for="">Seleccione a que actividad/actividades inscribirse</label>
+        <br>
+        <input type="checkbox" name="actividades[]" id="visita" value="visita">
+        <label for="visita">Visita a museo</label>
+        <br>
+        <input type="checkbox" name="actividades[]" id="taller" value="taller">
+        <label for="taller">Taller de arte</label>
+        <br>
+        <input type="checkbox" name="actividades[]" id="excursion" value="excursion">
+        <label for="excursion">Excursion a la montaña</label>
+        <br><br>
+
+
+</body>
+</html>
