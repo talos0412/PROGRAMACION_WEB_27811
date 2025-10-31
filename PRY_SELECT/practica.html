@@ -33,28 +33,44 @@
         <br>
         <br>
 
-        <select name="cedula" id="cedula">
-            <option value="">Inicia con cero:</option>
-            <option value=""><input 
-  type="number" 
-  id="cedula"
-  name="cedula"
-  placeholder="1750088401"
-  min="0"
-  max="9999999999"
-  required></option>
-            <option value="1723456791">1723456791</option>
-            <option value="1723456792">1723456792</option>
-        </select>
 
-        <br>
+  <form>
+  <!-- Opción: Inicia con Cero -->
+  <label>
+    <input type="radio" name="tipoCedula" value="iniciaCero" required>
+    Inicia con cero
+  </label><br>
+  
+  <input 
+    type="number" 
+    name="cedula" 
+    id="cedula"
+    placeholder="1750088401"
+    min="100000000" 
+    max="999999999"
+    pattern="0[1-9]{9}" 
+    title="Debe comenzar con 0">
 
-        
-    
-    
+  <br><br>
 
-        <br>
-        
+  <!-- Opción: No inicia con Cero -->
+  <label>
+    <input type="radio" name="tipoCedula" value="noCero">
+    No inicia con cero
+  </label><br>
+  
+  <input 
+    type="number"
+    name="cedula" 
+    id="cedula"
+    placeholder="1750088401" 
+    min="1000000000" 
+    max="9999999999"
+    title="Debe ser un número de 10 dígitos sin cero inicial">
+
+  <br><br>
+
+  <br><br>
 
         
         <label for="fecha_nacimiento">Fecha de nacimiento</label><br>
